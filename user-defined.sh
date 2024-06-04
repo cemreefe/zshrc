@@ -17,9 +17,9 @@ function wfor {
 alias gitup="git commit --amend --no-edit"
 
 ## Update ```user-defined.sh```
-function update_zshrc() {
+function zupdate {
     local current_dir=$(pwd)
     cd ~/.zshrc-git
-    git pull origin master
+    git pull origin main
     cd "$current_dir"
 }
