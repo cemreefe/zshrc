@@ -1,4 +1,4 @@
-# A repo for my personal zhsrc scripts
+# A repo for my personal zhsrc file
 
 Decided to save these somewhere after losing my zhsrc file while changing jobs.
 
