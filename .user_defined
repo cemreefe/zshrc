@@ -1,6 +1,4 @@
                                                                                                                               
-################################# ~~ USER DEFINED ~~ #######################################     
-
 ## Play beep sound.
 alias beep="tput bel"
 
@@ -8,11 +6,9 @@ alias beep="tput bel"
 export NOCORS="--args --profile-directory=Default --disable-web-security"
 
 ## Function that executes command until it succeeds.
-function waitfor {
+function wfor {
   until "$@"; do
     echo "Command failed, retrying in 3 seconds..."
     sleep 3
   done
 }
-
-############################### ~~ END USER DEFINED ~~ #####################################
