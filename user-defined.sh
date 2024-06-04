@@ -15,3 +15,11 @@ function wfor {
 
 ## Add currently staged files to last local commit
 alias gitup="git commit --amend --no-edit"
+
+## Update ```user-defined.sh```
+function update_zshrc() {
+    local current_dir=$(pwd)
+    cd ~/.zshrc-git
+    git pull origin master
+    cd "$current_dir"
+}
