@@ -1,6 +1,6 @@
-# A repo for my personal zhsrc file
+# A repo for my personal zshrc file
 
-Decided to save these somewhere after losing my zhsrc file while changing jobs.
+Decided to save these somewhere after losing my zshrc file while changing jobs.
 
 ## Setup
 
