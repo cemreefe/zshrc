@@ -8,5 +8,5 @@ Decided to save these somewhere after losing my zshrc file while changing jobs.
 cd ~ \
 && git clone https://github.com/cemreefe/zshrc \
 && mv zshrc .zshrc-git \
-&& echo "source $(pwd)/.zshrc-git/user_defined.sh" >> ~/.zshrc
+&& echo "source $(pwd)/.zshrc-git/user-defined.sh" >> ~/.zshrc
 ```
