@@ -7,5 +7,5 @@ Decided to save these somewhere after losing my zshrc file while changing jobs.
 ```
 cd
 git clone https://github.com/cemreefe/zshrc
-echo "source $(pwd)/zshrc/.user_defined" >> ~/.zshrc
+echo "source $(pwd)/zshrc/user_defined.sh" >> ~/.zshrc
 ```
