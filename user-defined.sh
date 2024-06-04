@@ -21,5 +21,6 @@ function zupdate {
     local current_dir=$(pwd)
     cd ~/.zshrc-git
     git pull origin main
+    source user-defined.sh
     cd "$current_dir"
 }
