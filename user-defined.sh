@@ -2,6 +2,9 @@
 ## Play beep sound.
 alias beep="tput bel"
 
+## Python shortcut
+alias p=python
+
 ## Start chromium-based browser with CORS disabled (i.e. ```google-chrome $NOCORS```).
 export NOCORS="--args --profile-directory=Default --disable-web-security"
 
