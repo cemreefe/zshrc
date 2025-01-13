@@ -1,4 +1,16 @@
-                                                                                                                              
+########### GITHUB SYNC DO NOT DELETE ###########
+
+## Sync ```user-defined.sh``` with github.
+function zupdate {
+    local current_dir=$(pwd)
+    cd ~/.zshrc-git
+    git pull origin main
+    source user-defined.sh
+    cd "$current_dir"
+}
+
+############ USER DEFINED PLAYGROUND ###########
+
 ## Play beep sound.
 alias beep="tput bel"
 
@@ -18,15 +30,6 @@ function wfor {
 
 ## Add currently staged files to last local commit.
 alias gitup="git commit --amend --no-edit"
-
-## Update ```user-defined.sh```
-function zupdate {
-    local current_dir=$(pwd)
-    cd ~/.zshrc-git
-    git pull origin main
-    source user-defined.sh
-    cd "$current_dir"
-}
 
 ## Pull latest on target branch and rebase current branch on target branch.
 function pullrebase() {
