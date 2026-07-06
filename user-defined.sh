@@ -38,3 +38,19 @@ function pullrebase() {
 
     git checkout $target_branch && git pull && git checkout $initial_branch && git rebase origin/$target_branch
 }
+
+## cd to dir (or home) and list contents.
+c() {
+  if [[ $# -eq 0 ]]; then
+    cd && ls
+  else
+    cd -- "$@" && ls
+  fi
+}
+
+## opencode with lean config (no project config).
+oclean() {
+  XDG_CONFIG_HOME="$HOME/.config/opencode-lean" \
+  OPENCODE_DISABLE_PROJECT_CONFIG=1 \
+  opencode "$@"
+}
